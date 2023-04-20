@@ -4,14 +4,13 @@ using UnityEngine;
 
 public class UnitsSpawning : MonoBehaviour
 {
-    [SerializeField] private Transform _parentPoint;
     [SerializeField] private SpawnScriptableObject _unit;
     [SerializeField] private float _delay = 2f;
     [SerializeField] private GameObject[] _spawnPoints;
 
     private void Start()
     {
-        StartCoroutine("spawnUnits");
+        StartCoroutine(spawnUnits());
     }
 
     private IEnumerator spawnUnits()

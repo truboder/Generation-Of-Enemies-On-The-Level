@@ -10,10 +10,10 @@ public class UnitsSpawning : MonoBehaviour
 
     private void Start()
     {
-        StartCoroutine(spawnUnits());
+        StartCoroutine(SpawnUnits());
     }
 
-    private IEnumerator spawnUnits()
+    private IEnumerator SpawnUnits()
     {
         yield return new WaitForSeconds(_delay);
 

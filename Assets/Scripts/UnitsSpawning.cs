@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class UnitsSpawning : MonoBehaviour
 {
-    [SerializeField] private SpawnScriptableObject _unit;
+    [SerializeField] private Enemy _unit;
     [SerializeField] private float _delay = 2f;
-    [SerializeField] private GameObject[] _spawnPoints;
+    [SerializeField] private SpawnPoint[] _spawnPoints;
 
     private void Start()
     {
@@ -19,7 +19,7 @@ public class UnitsSpawning : MonoBehaviour
 
         foreach (var spawnPoint in _spawnPoints)
         {
-            Instantiate(_unit.Prefab, spawnPoint.transform);
+            Instantiate(_unit.Prefub.Prefub, spawnPoint.transform);
             yield return new WaitForSeconds(_delay);
         }
     }

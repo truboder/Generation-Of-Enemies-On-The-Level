@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2edf033c177d61c49a83b7f6ee3c4da6, type: 3}
   m_Name: SpawnSoldier
   m_EditorClassIdentifier: 
-  Prefab: {fileID: 1000011742669328, guid: 315058484cf2044ce8dcb608b4678ff6, type: 3}
+  Prefub: {fileID: 1000013261649242, guid: 7d908ba845b1044e6829ed5fb7c4be10, type: 3}

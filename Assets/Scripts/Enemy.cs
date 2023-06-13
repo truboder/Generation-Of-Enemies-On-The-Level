@@ -4,5 +4,5 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    [SerializeField] public SpawnScriptableObject Prefub;
+    public SpawnScriptableObject Prefub;
 }

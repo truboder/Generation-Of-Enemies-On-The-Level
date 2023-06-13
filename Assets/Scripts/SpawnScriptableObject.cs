@@ -6,5 +6,5 @@ using UnityEngine;
 
 public class SpawnScriptableObject : ScriptableObject
 {
-    [SerializeField] public GameObject Prefub;  
+    public GameObject Prefub;  
 }

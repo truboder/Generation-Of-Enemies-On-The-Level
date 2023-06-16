@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class UnitsSpawning : MonoBehaviour
+public class UnitSpawner : MonoBehaviour
 {
     [SerializeField] private Enemy _unit;
     [SerializeField] private float _delay = 2f;
@@ -15,12 +15,14 @@ public class UnitsSpawning : MonoBehaviour
 
     private IEnumerator SpawnUnits()
     {
-        yield return new WaitForSeconds(_delay);
+        var waiting = new WaitForSeconds(_delay);
+
+        yield return waiting;
 
         foreach (var spawnPoint in _spawnPoints)
         {
-            Instantiate(_unit.Prefub.Prefub, spawnPoint.transform);
-            yield return new WaitForSeconds(_delay);
+            Instantiate(_unit.GetPrefab(), spawnPoint.transform);
+            yield return waiting;
         }
     }
 }

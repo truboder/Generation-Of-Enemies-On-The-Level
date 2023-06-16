@@ -4,5 +4,10 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    public SpawnScriptableObject Prefub;
+    [SerializeField] private GameObject Prefab;
+
+    public GameObject GetPrefab()
+    {
+        return Prefab;
+    }
 }

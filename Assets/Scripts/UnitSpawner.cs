@@ -21,7 +21,7 @@ public class UnitSpawner : MonoBehaviour
 
         foreach (var spawnPoint in _spawnPoints)
         {
-            Instantiate(_unit.GetPrefab(), spawnPoint.transform);
+            Instantiate(_unit.gameObject, spawnPoint.transform);
             yield return waiting;
         }
     }
